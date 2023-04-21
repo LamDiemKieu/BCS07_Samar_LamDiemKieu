@@ -157,6 +157,7 @@ nav button:hover {
 }
 .banner .banner_content .banner_right {
   width: 40%;
+  padding-left: 50px;
 }
 
 /* phần services */
@@ -883,9 +884,10 @@ footer .footer_copyright .footer_content .footer_right a:hover {
 }
 
 /* back_to_top */
-.backToTop {
+.backToTop button {
   width: 50px;
   height: 50px;
+  border: none;
   background: #f55f8d;
   border-radius: 8px;
   line-height: 50px;
@@ -898,8 +900,9 @@ footer .footer_copyright .footer_content .footer_right a:hover {
   transition: all 0.2s;
   box-shadow: -4px 4px 24px -10px #f55f8d;
 }
-.backToTop a {
+.backToTop button a {
   text-decoration: none;
+  color: white;
 }
 
 /* keyframes */

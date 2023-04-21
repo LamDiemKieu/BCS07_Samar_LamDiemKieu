@@ -850,9 +850,9 @@
                     </ul>
                 </div>
             </div>
-
+        </div>
             <div class="footer_copyright">
-                <div class="footer_content">
+                <div class=" container footer_content">
                     <div class="footer_left">
                         Copyright © 2021
                         <span>DexignZone</span>
@@ -865,14 +865,16 @@
                     </div>
                 </div>
             </div>
-        </div>
     </footer>
 
     <!-- back_to_top -->
-    <a href="#" class="backToTop">
-        <i class="fa fa-arrow-up"></i>
-    </a>
-
+    <div class="backToTop">
+        <button id="myBtn" onclick="topFunction()" fdprocessedid="1ag0sk" style="display: block;">
+            <a href="#">
+                <i class="fa fa-arrow-up"></i>
+            </a>
+        </button>
+    </div>
 
     <!-- slick-carousel js (jquery) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
@@ -935,7 +937,24 @@ https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js
                 }
             }
         })
-    
+    </script>
+
+    <!-- backToTop js  -->
+    <script>   
+        let backtotop = document.getElementById("myBtn");
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+                backtotop.style.display = "block";
+            } else {
+                backtotop.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
     </script>
 </body>
 </body>
